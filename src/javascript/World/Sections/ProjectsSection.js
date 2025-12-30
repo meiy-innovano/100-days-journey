@@ -2,10 +2,8 @@ import * as THREE from 'three'
 import Project from './Project'
 import gsap from 'gsap'
 
-export default class ProjectsSection
-{
-    constructor(_options)
-    {
+export default class ProjectsSection {
+    constructor(_options) {
         // Options
         this.time = _options.time
         this.resources = _options.resources
@@ -20,8 +18,7 @@ export default class ProjectsSection
         this.y = _options.y
 
         // Debug
-        if(this.debug)
-        {
+        if (this.debug) {
             this.debugFolder = this.debug.addFolder('projects')
             this.debugFolder.open()
         }
@@ -43,20 +40,17 @@ export default class ProjectsSection
         this.setZone()
 
         // Add all project from the list
-        for(const _options of this.list)
-        {
+        for (const _options of this.list) {
             this.add(_options)
         }
     }
 
-    setGeometries()
-    {
+    setGeometries() {
         this.geometries = {}
         this.geometries.floor = new THREE.PlaneGeometry(16, 8)
     }
 
-    setMeshes()
-    {
+    setMeshes() {
         this.meshes = {}
 
         // this.meshes.boardStructure = this.objects.getConvertedMesh(this.resources.items.projectsBoardStructure.scene.children, { floorShadowTexture: this.resources.items.projectsBoardStructureFloorShadowTexture })
@@ -67,18 +61,17 @@ export default class ProjectsSection
         this.meshes.areaLabel.matrixAutoUpdate = false
     }
 
-    setList()
-    {
+    setList() {
         this.list = [
             {
                 name: 'PROFESSIONAL EXCELLENCE',
                 imageSources:
-                [
-                    './models/projects/threejsJourney/slideA.webp',
-                    './models/projects/threejsJourney/slideB.webp',
-                    './models/projects/threejsJourney/slideC.webp',
-                    './models/projects/threejsJourney/slideD.webp'
-                ],
+                    [
+                        './models/projects/theme1/slideA.webp',
+                        './models/projects/theme1/slideB.webp',
+                        './models/projects/theme1/slideC.webp',
+                        './models/projects/theme1/slideD.webp'
+                    ],
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
                 {
@@ -92,18 +85,18 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'fwa', x: 3.95, y: 4.15 }
-                ]
+                    [
+                        { type: 'fwa', x: 3.95, y: 4.15 }
+                    ]
             },
             {
                 name: 'THE OWNERSHIP MINDSET',
                 imageSources:
-                [
-                    './models/projects/chartogne/slideA.jpg',
-                    './models/projects/chartogne/slideB.jpg',
-                    './models/projects/chartogne/slideC.jpg'
-                ],
+                    [
+                        './models/projects/theme2/slideA.jpg',
+                        './models/projects/theme2/slideB.jpg',
+                        './models/projects/theme2/slideC.jpg'
+                    ],
                 floorTexture: this.resources.items.projectsChartogneFloorTexture,
                 link:
                 {
@@ -117,21 +110,21 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                    [
+                        { type: 'awwwards', x: 3.95, y: 4.15 },
+                        { type: 'fwa', x: 5.6, y: 4.15 },
+                        { type: 'cssda', x: 7.2, y: 4.15 }
+                    ]
             },
             {
                 name: 'DISCIPLINE & RELIABILITY',
                 imageSources:
-                [
-                    './models/projects/bonhomme10ans/slideA.webp',
-                    './models/projects/bonhomme10ans/slideB.webp',
-                    './models/projects/bonhomme10ans/slideC.webp',
-                    './models/projects/bonhomme10ans/slideD.webp'
-                ],
+                    [
+                        './models/projects/theme3/slideA.webp',
+                        './models/projects/theme3/slideB.webp',
+                        './models/projects/theme3/slideC.webp',
+                        './models/projects/theme3/slideD.webp'
+                    ],
                 floorTexture: this.resources.items.projectsBonhomme10ansFloorTexture,
                 link:
                 {
@@ -145,20 +138,20 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                ]
+                    [
+                        { type: 'awwwards', x: 3.95, y: 4.15 },
+                        { type: 'fwa', x: 5.6, y: 4.15 },
+                    ]
             },
             {
                 name: 'PURPOSE & STRATEGY',
                 imageSources:
-                [
-                    './models/projects/luni/slideA.webp',
-                    './models/projects/luni/slideB.webp',
-                    './models/projects/luni/slideC.webp',
-                    './models/projects/luni/slideD.webp'
-                ],
+                    [
+                        './models/projects/theme4/slideA.webp',
+                        './models/projects/theme4/slideB.webp',
+                        './models/projects/theme4/slideC.webp',
+                        './models/projects/theme4/slideD.webp'
+                    ],
                 floorTexture: this.resources.items.projectsLuniFloorTexture,
                 link:
                 {
@@ -172,19 +165,19 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                ]
+                    [
+                        { type: 'awwwards', x: 3.95, y: 4.15 },
+                        { type: 'fwa', x: 5.6, y: 4.15 },
+                    ]
             },
             {
                 name: 'COMMUNICATION & INFLUENCE',
                 imageSources:
-                [
-                    './models/projects/madbox/slideA.jpg',
-                    './models/projects/madbox/slideB.jpg',
-                    './models/projects/madbox/slideC.jpg'
-                ],
+                    [
+                        './models/projects/theme5/slideA.jpg',
+                        './models/projects/theme5/slideB.jpg',
+                        './models/projects/theme5/slideC.jpg'
+                    ],
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link:
                 {
@@ -198,19 +191,19 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 }
-                ]
+                    [
+                        { type: 'awwwards', x: 3.95, y: 4.15 },
+                        { type: 'fwa', x: 5.6, y: 4.15 }
+                    ]
             },
             {
                 name: 'TECHNICAL PROJECT MANAGEMENT',
                 imageSources:
-                [
-                    './models/projects/scout/slideA.jpg',
-                    './models/projects/scout/slideB.jpg',
-                    './models/projects/scout/slideC.jpg'
-                ],
+                    [
+                        './models/projects/theme6/slideA.jpg',
+                        './models/projects/theme6/slideB.jpg',
+                        './models/projects/theme6/slideC.jpg'
+                    ],
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link:
                 {
@@ -224,8 +217,8 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                ]
+                    [
+                    ]
             },
             // {
             //     name: 'Zenly',
@@ -257,11 +250,11 @@ export default class ProjectsSection
             {
                 name: 'STRATEGIC LEADERSHIP & INNOVATION',
                 imageSources:
-                [
-                    './models/projects/priorHoldings/slideA.jpg',
-                    './models/projects/priorHoldings/slideB.jpg',
-                    './models/projects/priorHoldings/slideC.jpg'
-                ],
+                    [
+                        './models/projects/theme7/slideA.jpg',
+                        './models/projects/theme7/slideB.jpg',
+                        './models/projects/theme7/slideC.jpg'
+                    ],
                 floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
                 link:
                 {
@@ -275,20 +268,20 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                    [
+                        { type: 'awwwards', x: 3.95, y: 4.15 },
+                        { type: 'fwa', x: 5.6, y: 4.15 },
+                        { type: 'cssda', x: 7.2, y: 4.15 }
+                    ]
             },
             {
                 name: 'CONTINUOUS LEARNING & GROWTH',
                 imageSources:
-                [
-                    './models/projects/orano/slideA.jpg',
-                    './models/projects/orano/slideB.jpg',
-                    './models/projects/orano/slideC.jpg'
-                ],
+                    [
+                        './models/projects/theme8/slideA.jpg',
+                        './models/projects/theme8/slideB.jpg',
+                        './models/projects/theme8/slideC.jpg'
+                    ],
                 floorTexture: this.resources.items.projectsOranoFloorTexture,
                 link:
                 {
@@ -302,20 +295,20 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                    [
+                        { type: 'awwwards', x: 3.95, y: 4.15 },
+                        { type: 'fwa', x: 5.6, y: 4.15 },
+                        { type: 'cssda', x: 7.2, y: 4.15 }
+                    ]
             },
             {
                 name: 'TEAM CULTURE & SERVICE',
                 imageSources:
-                [
-                    './models/projects/citrixRedbull/slideA.jpg',
-                    './models/projects/citrixRedbull/slideB.jpg',
-                    './models/projects/citrixRedbull/slideC.jpg'
-                ],
+                    [
+                        './models/projects/theme9/slideA.jpg',
+                        './models/projects/theme9/slideB.jpg',
+                        './models/projects/theme9/slideC.jpg'
+                    ],
                 floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
                 link:
                 {
@@ -329,21 +322,21 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                    [
+                        { type: 'awwwards', x: 3.95, y: 4.15 },
+                        { type: 'fwa', x: 5.6, y: 4.15 },
+                        { type: 'cssda', x: 7.2, y: 4.15 }
+                    ]
             },
             {
                 name: 'gleecChat',
                 imageSources:
-                [
-                    './models/projects/gleecChat/slideA.jpg',
-                    './models/projects/gleecChat/slideB.jpg',
-                    './models/projects/gleecChat/slideC.jpg',
-                    './models/projects/gleecChat/slideD.jpg'
-                ],
+                    [
+                        './models/projects/theme10/slideA.jpg',
+                        './models/projects/theme10/slideB.jpg',
+                        './models/projects/theme10/slideC.jpg',
+                        './models/projects/theme10/slideD.jpg'
+                    ],
                 floorTexture: this.resources.items.projectsGleecChatFloorTexture,
                 link:
                 {
@@ -357,11 +350,11 @@ export default class ProjectsSection
                     }
                 },
                 distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                    [
+                        { type: 'awwwards', x: 3.95, y: 4.15 },
+                        { type: 'fwa', x: 5.6, y: 4.15 },
+                        { type: 'cssda', x: 7.2, y: 4.15 }
+                    ]
             },
             // {
             //     name: 'keppler',
@@ -388,8 +381,7 @@ export default class ProjectsSection
         ]
     }
 
-    setZone()
-    {
+    setZone() {
         const totalWidth = this.list.length * (this.interDistance / 2)
 
         const zone = this.zones.add({
@@ -398,27 +390,23 @@ export default class ProjectsSection
             data: { cameraAngle: 'projects' }
         })
 
-        zone.on('in', (_data) =>
-        {
+        zone.on('in', (_data) => {
             this.camera.angle.set(_data.cameraAngle)
             gsap.to(this.passes.horizontalBlurPass.material.uniforms.uStrength.value, { x: 0, duration: 2 })
             gsap.to(this.passes.verticalBlurPass.material.uniforms.uStrength.value, { y: 0, duration: 2 })
         })
 
-        zone.on('out', () =>
-        {
+        zone.on('out', () => {
             this.camera.angle.set('default')
             gsap.to(this.passes.horizontalBlurPass.material.uniforms.uStrength.value, { x: this.passes.horizontalBlurPass.strength, duration: 2 })
             gsap.to(this.passes.verticalBlurPass.material.uniforms.uStrength.value, { y: this.passes.verticalBlurPass.strength, duration: 2 })
         })
     }
 
-    add(_options)
-    {
+    add(_options) {
         const x = this.x + this.items.length * this.interDistance
         let y = this.y
-        if(this.items.length > 0)
-        {
+        if (this.items.length > 0) {
             y += (Math.random() - 0.5) * this.positionRandomess
         }
 
@@ -439,8 +427,7 @@ export default class ProjectsSection
         this.container.add(project.container)
 
         // Add tiles
-        if(this.items.length >= 1)
-        {
+        if (this.items.length >= 1) {
             const previousProject = this.items[this.items.length - 1]
             const start = new THREE.Vector2(previousProject.x + this.projectHalfWidth, previousProject.y)
             const end = new THREE.Vector2(project.x - this.projectHalfWidth, project.y)

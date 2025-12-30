@@ -64,7 +64,7 @@ export default class ProjectsSection {
     setList() {
         this.list = [
             {
-                name: 'PROFESSIONAL EXCELLENCE',
+                name: 'Theme 1',
                 imageSources:
                     [
                         './models/projects/theme1/slideA.webp',
@@ -90,7 +90,7 @@ export default class ProjectsSection {
                     ]
             },
             {
-                name: 'THE OWNERSHIP MINDSET',
+                name: 'Theme 2',
                 imageSources:
                     [
                         './models/projects/theme2/slideA.jpg',
@@ -117,7 +117,7 @@ export default class ProjectsSection {
                     ]
             },
             {
-                name: 'DISCIPLINE & RELIABILITY',
+                name: 'Theme 3',
                 imageSources:
                     [
                         './models/projects/theme3/slideA.webp',
@@ -130,7 +130,7 @@ export default class ProjectsSection {
                 {
                     href: 'https://anniversary.bonhommeparis.com/',
                     x: - 2.8,
-                    y: - 5,
+                    y: - 5.4,
                     halfExtents:
                     {
                         x: 3.2,
@@ -144,7 +144,7 @@ export default class ProjectsSection {
                     ]
             },
             {
-                name: 'PURPOSE & STRATEGY',
+                name: 'Theme 4',
                 imageSources:
                     [
                         './models/projects/theme4/slideA.webp',
@@ -157,7 +157,7 @@ export default class ProjectsSection {
                 {
                     href: 'https://luni.app',
                     x: - 2.8,
-                    y: - 5,
+                    y: - 5.3,
                     halfExtents:
                     {
                         x: 3.2,
@@ -171,7 +171,7 @@ export default class ProjectsSection {
                     ]
             },
             {
-                name: 'COMMUNICATION & INFLUENCE',
+                name: 'Theme 5',
                 imageSources:
                     [
                         './models/projects/theme5/slideA.jpg',
@@ -197,7 +197,7 @@ export default class ProjectsSection {
                     ]
             },
             {
-                name: 'TECHNICAL PROJECT MANAGEMENT',
+                name: 'Theme 6',
                 imageSources:
                     [
                         './models/projects/theme6/slideA.jpg',
@@ -248,7 +248,7 @@ export default class ProjectsSection {
             //     ]
             // },
             {
-                name: 'STRATEGIC LEADERSHIP & INNOVATION',
+                name: 'Theme 7',
                 imageSources:
                     [
                         './models/projects/theme7/slideA.jpg',
@@ -275,7 +275,7 @@ export default class ProjectsSection {
                     ]
             },
             {
-                name: 'CONTINUOUS LEARNING & GROWTH',
+                name: 'Theme 8',
                 imageSources:
                     [
                         './models/projects/theme8/slideA.jpg',
@@ -302,7 +302,7 @@ export default class ProjectsSection {
                     ]
             },
             {
-                name: 'TEAM CULTURE & SERVICE',
+                name: 'Theme 9',
                 imageSources:
                     [
                         './models/projects/theme9/slideA.jpg',
@@ -329,7 +329,7 @@ export default class ProjectsSection {
                     ]
             },
             {
-                name: 'gleecChat',
+                name: 'Theme 10',
                 imageSources:
                     [
                         './models/projects/theme10/slideA.jpg',

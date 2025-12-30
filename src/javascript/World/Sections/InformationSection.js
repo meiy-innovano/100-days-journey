@@ -19,8 +19,8 @@ export default class InformationSection
         this.container.matrixAutoUpdate = false
 
         this.setStatic()
-        this.setBaguettes()
-        this.setLinks()
+        // this.setBaguettes()
+        // this.setLinks()
         this.setActivities()
         this.setTiles()
     }
@@ -88,22 +88,22 @@ export default class InformationSection
 
         // Options
         this.links.options = [
-            {
-                href: 'https://twitter.com/bruno_simon/',
-                labelTexture: this.resources.items.informationContactTwitterLabelTexture
-            },
-            {
-                href: 'https://github.com/brunosimon/',
-                labelTexture: this.resources.items.informationContactGithubLabelTexture
-            },
-            {
-                href: 'https://www.linkedin.com/in/simonbruno77/',
-                labelTexture: this.resources.items.informationContactLinkedinLabelTexture
-            },
-            {
-                href: 'mailto:simon.bruno.77@gmail.com',
-                labelTexture: this.resources.items.informationContactMailLabelTexture
-            }
+            // {
+            //     href: 'https://twitter.com/bruno_simon/',
+            //     labelTexture: this.resources.items.informationContactTwitterLabelTexture
+            // },
+            // {
+            //     href: 'https://github.com/brunosimon/',
+            //     labelTexture: this.resources.items.informationContactGithubLabelTexture
+            // },
+            // {
+            //     href: 'https://www.linkedin.com/in/simonbruno77/',
+            //     labelTexture: this.resources.items.informationContactLinkedinLabelTexture
+            // },
+            // {
+            //     href: 'mailto:simon.bruno.77@gmail.com',
+            //     labelTexture: this.resources.items.informationContactMailLabelTexture
+            // }
         ]
 
         // Create each link
@@ -151,7 +151,7 @@ export default class InformationSection
         // Set up
         this.activities = {}
         this.activities.x = this.x + 0
-        this.activities.y = this.y - 10
+        this.activities.y = this.y - 7
         this.activities.multiplier = 5.5
 
         // Geometry
@@ -177,7 +177,7 @@ export default class InformationSection
     setTiles()
     {
         this.tiles.add({
-            start: new THREE.Vector2(this.x - 1.2, this.y + 13),
+            start: new THREE.Vector2(this.x - 1.2, this.y + 15),
             delta: new THREE.Vector2(0, - 20)
         })
     }

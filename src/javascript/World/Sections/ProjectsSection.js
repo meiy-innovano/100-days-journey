@@ -67,10 +67,10 @@ export default class ProjectsSection {
                 name: 'Theme 1',
                 imageSources:
                     [
-                        './models/projects/theme1/slideA.webp',
-                        './models/projects/theme1/slideB.webp',
-                        './models/projects/theme1/slideC.webp',
-                        './models/projects/theme1/slideD.webp'
+                        './models/projects/theme1/slideA.png',
+                        './models/projects/theme1/slideB.png',
+                        './models/projects/theme1/slideC.png',
+                        './models/projects/theme1/slideD.png'
                     ],
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
@@ -93,9 +93,9 @@ export default class ProjectsSection {
                 name: 'Theme 2',
                 imageSources:
                     [
-                        './models/projects/theme2/slideA.jpg',
-                        './models/projects/theme2/slideB.jpg',
-                        './models/projects/theme2/slideC.jpg'
+                        './models/projects/theme2/slideA.png',
+                        './models/projects/theme2/slideB.png',
+                        './models/projects/theme2/slideC.png',
                     ],
                 floorTexture: this.resources.items.projectsChartogneFloorTexture,
                 link:
@@ -120,10 +120,10 @@ export default class ProjectsSection {
                 name: 'Theme 3',
                 imageSources:
                     [
-                        './models/projects/theme3/slideA.webp',
-                        './models/projects/theme3/slideB.webp',
-                        './models/projects/theme3/slideC.webp',
-                        './models/projects/theme3/slideD.webp'
+                        './models/projects/theme3/slideA.png',
+                        './models/projects/theme3/slideB.png',
+                        './models/projects/theme3/slideC.png',
+                        // './models/projects/theme3/slideD.png'
                     ],
                 floorTexture: this.resources.items.projectsBonhomme10ansFloorTexture,
                 link:
@@ -147,10 +147,10 @@ export default class ProjectsSection {
                 name: 'Theme 4',
                 imageSources:
                     [
-                        './models/projects/theme4/slideA.webp',
-                        './models/projects/theme4/slideB.webp',
-                        './models/projects/theme4/slideC.webp',
-                        './models/projects/theme4/slideD.webp'
+                        './models/projects/theme4/slideA.png',
+                        './models/projects/theme4/slideB.png',
+                        './models/projects/theme4/slideC.png',
+                        // './models/projects/theme4/slideD.png'
                     ],
                 floorTexture: this.resources.items.projectsLuniFloorTexture,
                 link:
@@ -174,9 +174,9 @@ export default class ProjectsSection {
                 name: 'Theme 5',
                 imageSources:
                     [
-                        './models/projects/theme5/slideA.jpg',
-                        './models/projects/theme5/slideB.jpg',
-                        './models/projects/theme5/slideC.jpg'
+                        './models/projects/theme5/slideA.png',
+                        './models/projects/theme5/slideB.png',
+                        './models/projects/theme5/slideC.png'
                     ],
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link:
@@ -200,9 +200,9 @@ export default class ProjectsSection {
                 name: 'Theme 6',
                 imageSources:
                     [
-                        './models/projects/theme6/slideA.jpg',
-                        './models/projects/theme6/slideB.jpg',
-                        './models/projects/theme6/slideC.jpg'
+                        './models/projects/theme6/slideA.png',
+                        './models/projects/theme6/slideB.png',
+                        './models/projects/theme6/slideC.png'
                     ],
                 floorTexture: this.resources.items.projectsScoutFloorTexture,
                 link:
@@ -251,9 +251,9 @@ export default class ProjectsSection {
                 name: 'Theme 7',
                 imageSources:
                     [
-                        './models/projects/theme7/slideA.jpg',
-                        './models/projects/theme7/slideB.jpg',
-                        './models/projects/theme7/slideC.jpg'
+                        './models/projects/theme7/slideA.png',
+                        './models/projects/theme7/slideB.png',
+                        './models/projects/theme7/slideC.png'
                     ],
                 floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
                 link:
@@ -278,9 +278,9 @@ export default class ProjectsSection {
                 name: 'Theme 8',
                 imageSources:
                     [
-                        './models/projects/theme8/slideA.jpg',
-                        './models/projects/theme8/slideB.jpg',
-                        './models/projects/theme8/slideC.jpg'
+                        './models/projects/theme8/slideA.png',
+                        './models/projects/theme8/slideB.png',
+                        './models/projects/theme8/slideC.png'
                     ],
                 floorTexture: this.resources.items.projectsOranoFloorTexture,
                 link:
@@ -305,9 +305,9 @@ export default class ProjectsSection {
                 name: 'Theme 9',
                 imageSources:
                     [
-                        './models/projects/theme9/slideA.jpg',
-                        './models/projects/theme9/slideB.jpg',
-                        './models/projects/theme9/slideC.jpg'
+                        './models/projects/theme9/slideA.png',
+                        './models/projects/theme9/slideB.png',
+                        './models/projects/theme9/slideC.png'
                     ],
                 floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
                 link:
@@ -332,10 +332,10 @@ export default class ProjectsSection {
                 name: 'Theme 10',
                 imageSources:
                     [
-                        './models/projects/theme10/slideA.jpg',
-                        './models/projects/theme10/slideB.jpg',
-                        './models/projects/theme10/slideC.jpg',
-                        './models/projects/theme10/slideD.jpg'
+                        './models/projects/theme10/slideA.png',
+                        './models/projects/theme10/slideB.png',
+                        './models/projects/theme10/slideC.png',
+                        // './models/projects/theme10/slideD.png'
                     ],
                 floorTexture: this.resources.items.projectsGleecChatFloorTexture,
                 link:
